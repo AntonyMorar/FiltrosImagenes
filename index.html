@@ -13,9 +13,16 @@
     </div>
 
 
-
     <div class="imageContainer">
       <canvas id="imagePreview" width="400" height="400">
+    </div>
+
+    <div class="buttons">
+      <p>¿No funciona? <a href="index.html">Actualiza la imágen</a></p>
+      <h2>Filtros</h2>
+      <button type="button" name="button" onclick="filtroGrises(ctx,400,400)">Escala de grises</button>
+      <button type="button" name="button" onclick="filtroInvertir(ctx,400,400)">Invertir</button>
+      <button type="button" name="button" onclick="filtroSepia(ctx,400,400)">Sepia</button>
     </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>

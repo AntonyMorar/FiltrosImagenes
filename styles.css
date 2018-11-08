@@ -1,0 +1,15 @@
+body{
+  padding: 30px;
+  text-align: center;
+}
+
+.cuerpo{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.alertji{
+  height: 100%;
+  margin-left: 20px;
+}

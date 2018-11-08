@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Álgebra Lineal: Procesamiento de Imágenes</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <div class="header">
-      <h1>Álgebra Lineal</h1>
-      <h2>Procesamiento de imágenes</h2>
-      <p>Proyecto para procesamiento de imágenes con transformaciones lineales</p>
-    </div>
 
+<head>
+  <meta charset="utf-8">
+  <title>Álgebra Lineal: Procesamiento de Imágenes</title>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
 
+<body>
+  <div class="header">
+    <h1>Álgebra Lineal</h1>
+    <h2>Procesamiento de imágenes</h2>
+    <p>Proyecto para procesamiento de imágenes con transformaciones lineales</p>
+  </div>
+
+  <div class="cuerpo">
     <div class="imageContainer">
-      <canvas id="imagePreview" width="400" height="400">
-    </div>
+      <canvas id="imagePreview" width="400" height="400" class="img-thumbnail">
+  </div>
+  <p class="alert alert-primary alertji">¿No funciona? <a href="index.html">Actualiza la imágen</a></p>
+</div>
 
     <div class="buttons">
-      <p>¿No funciona? <a href="index.html">Actualiza la imágen</a></p>
       <h2>Filtros</h2>
-      <button type="button" name="button" onclick="filtroGrises(ctx,400,400)">Escala de grises</button>
-      <button type="button" name="button" onclick="filtroInvertir(ctx,400,400)">Invertir</button>
-      <button type="button" name="button" onclick="filtroSepia(ctx,400,400)">Sepia</button>
+      <button type="button" name="button" onclick="filtroGrises()" class="btn btn-primary">Escala de grises</button>
+      <button type="button" name="button" onclick="filtroInvertir()" class="btn btn-primary">Invertir</button>
+      <button type="button" name="button" onclick="filtroSepia()" class="btn btn-primary">Sepia</button>
     </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>

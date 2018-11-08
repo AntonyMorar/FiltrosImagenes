@@ -13,3 +13,9 @@ body{
   height: 100%;
   margin-left: 20px;
 }
+
+.alertjidos{
+  height: 100%;
+  margin-left: 20px;
+  display: none;
+}
